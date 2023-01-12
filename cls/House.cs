@@ -2,15 +2,15 @@ namespace Class
 {
     class House
     {
-        public int stone_needed;
-        public int wood_needed;
-        public int villageois;
+        static public int stone_needed = 3;
+        static public int wood_needed = 3;
+        static public int villageois = 10;
 
-        public House(ref int stone_needed, ref int wood_needed){
-        this.stone_needed = 3;
-        this.wood_needed = 3;
-        this.villageois = 10;
-        }
+        // public House(){
+        // this.stone_needed = 3;
+        // this.wood_needed = 3;
+        // this.villageois = 10;
+        // }
     }
 
     

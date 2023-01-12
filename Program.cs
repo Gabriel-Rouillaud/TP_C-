@@ -1,10 +1,8 @@
 ﻿using Class;
 
-Console.WriteLine(House.wood_needed); // affichera 3
-Console.WriteLine(House.stone_needed); // affichera 3
+Village myVillage = new Village("Phoenyx le createur");
+myVillage.getName(); // affichera Phoenyx le createur
+myVillage.addHouse(new House());
+myVillage.addHouse(new House());
 
-House justAHouse = new House();
-
-justAHouse.wood_needed;
-justAHouse.villageois;
-justAHouse.villageois = 20;
+myVillage.getVillageois();

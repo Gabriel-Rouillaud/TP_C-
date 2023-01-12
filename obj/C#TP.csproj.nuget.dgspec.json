@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj": {}
+    "C:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj": {
+    "C:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj",
         "projectName": "C#TP",
-        "projectPath": "c:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj",
+        "projectPath": "C:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\C#TP.csproj",
         "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\obj\\",
+        "outputPath": "C:\\Users\\Gabriel\\Desktop\\Dev\\M2iPOE\\C#TP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config"

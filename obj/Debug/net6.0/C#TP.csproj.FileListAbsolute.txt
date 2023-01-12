@@ -1,0 +1,15 @@
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\bin\Debug\net6.0\C#TP.exe
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\bin\Debug\net6.0\C#TP.deps.json
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\bin\Debug\net6.0\C#TP.runtimeconfig.json
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\bin\Debug\net6.0\C#TP.dll
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\bin\Debug\net6.0\C#TP.pdb
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.csproj.AssemblyReference.cache
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.AssemblyInfoInputs.cache
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.AssemblyInfo.cs
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.dll
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\refint\C#TP.dll
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.pdb
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\C#TP.genruntimeconfig.cache
+C:\Users\Gabriel\Desktop\Dev\M2iPOE\C#TP\obj\Debug\net6.0\ref\C#TP.dll
