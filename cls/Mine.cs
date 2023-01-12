@@ -2,15 +2,11 @@ namespace Class
 {
     class Mine
     {
-        public int gain_stone;
-        public int stone_cost;
-        public int wood_cost;
+        static public int gain_stone = 10;
+        static public int stone_cost = 2;
+        static public int wood_cost = 1;
 
         public Mine(){
-            this.gain_stone = 10;
-            this.stone_cost = 2;
-            this.wood_cost = 1;
-
             Console.WriteLine("Mine created");
         }
 

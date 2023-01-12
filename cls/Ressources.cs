@@ -40,5 +40,9 @@ namespace Class
                 woods -= woods - nbr;
             }
         }
+
+        public void addStone(int nbr){
+            stones +=  + nbr;
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace Class
             get {return name;}
         }
 
-        public int villageois;
+        public int nbr_villageois;
 
         private Ressources myRessources;
         
@@ -16,16 +16,20 @@ namespace Class
 
         public House chefHome;
 
+        public Mine villageMine;
+
 
         //Constructor
 
         public Village(string name){
             this.name = name;
-            this.villageois = House.villageois;
+            this.nbr_villageois = House.villageois;
             this.myRessources = new Ressources();
+            this.villageMine = new Mine();
             this.listHouse = new House[1];
             this.chefHome = new House();
             listHouse[0] = chefHome; 
+
         }
 
         
@@ -49,7 +53,7 @@ namespace Class
             int result = listHouse.Length * House.villageois;
             Console.WriteLine(result);
 
-            return this.villageois;
+            return this.nbr_villageois;
         }
 
         //Methods
@@ -70,6 +74,13 @@ namespace Class
             newTab[newTab.Length - 1] = maison; // J'appelle mon tableau à l'index lenght - 1 (dernier élement de mon tableau) et je lui attribue un nouvel élément.
 
             listHouse = newTab; // Je remplace l'ancien tableau sans accéder aux valeurs par le nouveau tableau
+        }
+
+        public void mineStone(int nbr_villageois){
+            //Vérifier si j'ai assez de villageois par rapport nbr_villageois
+            //Vérifier si j'ai suffisement de pierre et du bois avant d'aller miner
+            //Si condition = true alors mineStone
+            mineStone(nbr_villageois);
         }
     }
 }
