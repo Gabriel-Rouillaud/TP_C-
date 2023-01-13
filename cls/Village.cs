@@ -56,9 +56,8 @@ namespace Class
 
         public int getVillageois(){
             int result = listHouse.Length * House.villageois;
-            Console.WriteLine(result);
 
-            return this.villageois;
+            return result;
         }
 
         //Methods
@@ -107,6 +106,22 @@ namespace Class
             myRessources.useStone(Forest.stone_cost * nbr_villageois);
             myRessources.addWoods(Forest.gain_wood * nbr_villageois);
           }  
+        }
+
+        public void buildHouse(int nbr_house){
+            if(getWood() < House.wood_needed * nbr_house || getStone() < House.stone_needed * nbr_house){
+                Console.WriteLine("Vous n'avez pas assez de ressources pour construire ce batiment");
+            }else{
+                myRessources.useWood(House.stone_needed * nbr_house);
+                myRessources.useStone(House.stone_needed * nbr_house);
+
+                for (int i = 0; i < nbr_house; i++) // Pas possible de multiplier par un nombre une méthode, passer par une boucle pour répéter plusieurs fois la méthode si besoin
+                {
+                    this.addHouse(new House());
+                }
+
+                villageois = getVillageois();
+            }
         }
     }
 }
