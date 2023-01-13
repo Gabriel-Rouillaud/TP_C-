@@ -8,7 +8,7 @@ namespace Class
             get {return name;}
         }
 
-        public int nbr_villageois;
+        public int villageois;
 
         private Ressources myRessources;
         
@@ -23,16 +23,14 @@ namespace Class
 
         public Village(string name){
             this.name = name;
-            this.nbr_villageois = House.villageois;
+            this.villageois = House.villageois;
             this.myRessources = new Ressources();
-            this.villageMine = new Mine();
             this.listHouse = new House[1];
             this.chefHome = new House();
             listHouse[0] = chefHome; 
+            this.villageMine = new Mine();
 
-        }
-
-        
+        } 
 
         //Getters
 
@@ -42,18 +40,22 @@ namespace Class
         }
 
         public int getWood(){
-            return myRessources.getWood();
+            int woods = myRessources.getWood();
+
+            return woods;
         }
 
         public int getStone(){
-           return myRessources.getStone();
+           int stones = myRessources.getStone();
+
+           return stones;
         }
 
         public int getVillageois(){
             int result = listHouse.Length * House.villageois;
             Console.WriteLine(result);
 
-            return this.nbr_villageois;
+            return this.villageois;
         }
 
         //Methods
@@ -80,7 +82,18 @@ namespace Class
             //Vérifier si j'ai assez de villageois par rapport nbr_villageois
             //Vérifier si j'ai suffisement de pierre et du bois avant d'aller miner
             //Si condition = true alors mineStone
-            mineStone(nbr_villageois);
+
+            if(nbr_villageois > villageois){
+                Console.WriteLine("Vous n'avez pas assez de villageois");
+            }else if(getWood() < Mine.wood_cost * nbr_villageois || getStone() < Mine.stone_cost * nbr_villageois){
+                Console.WriteLine("Vous n'avez pas assez de ressources");
+            }else{
+                myRessources.useWood(Mine.wood_cost * nbr_villageois);
+                myRessources.useStone(Mine.stone_cost * nbr_villageois);
+                myRessources.addStone(Mine.gain_stone * nbr_villageois);
+            }
+
+            
         }
     }
 }

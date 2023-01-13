@@ -26,23 +26,27 @@ namespace Class
 
         public void useStone(int nbr){
             
-            if(stones <= 0){
+            if(nbr > stones){
                 Console.WriteLine("Vous ne pouvez pas plus utiliser de pierres.");
             }else{
-                stones -= stones - nbr;
+                stones -= nbr;
             }  
         }
 
         public void useWood(int nbr){
-            if(woods <= 0){
+            if(nbr > woods){
                 Console.WriteLine("Vous ne pouvez pas plus utiliser de bois.");
             }else{
-                woods -= woods - nbr;
+                woods -= nbr;
             }
         }
 
         public void addStone(int nbr){
-            stones +=  + nbr;
+            stones += nbr;
+        }
+
+        public void addWoods(int nbr){
+            woods += nbr;
         }
     }
 }
