@@ -18,6 +18,8 @@ namespace Class
 
         public Mine villageMine;
 
+        public Forest villageForest;
+
 
         //Constructor
 
@@ -29,6 +31,7 @@ namespace Class
             this.chefHome = new House();
             listHouse[0] = chefHome; 
             this.villageMine = new Mine();
+            this.villageForest = new Forest();
 
         } 
 
@@ -92,8 +95,18 @@ namespace Class
                 myRessources.useStone(Mine.stone_cost * nbr_villageois);
                 myRessources.addStone(Mine.gain_stone * nbr_villageois);
             }
+        }
 
-            
+        public void cutWood(int nbr_villageois){
+          if(nbr_villageois > villageois){
+            Console.WriteLine("Vous n'avez pas assez de villageois");
+          }else if(getWood() < Forest.wood_cost * nbr_villageois || getStone() < Forest.stone_cost * nbr_villageois){
+            Console.WriteLine("Vous n'avez pas assez de ressources");
+          }else{
+            myRessources.useWood(Forest.wood_cost * nbr_villageois);
+            myRessources.useStone(Forest.stone_cost * nbr_villageois);
+            myRessources.addWoods(Forest.gain_wood * nbr_villageois);
+          }  
         }
     }
 }

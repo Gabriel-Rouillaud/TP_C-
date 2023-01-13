@@ -3,16 +3,13 @@
 Village myVillage = new Village("Phoenyx le createur");
 myVillage.getName(); // affichera Phoenyx le createur
 
-// Mine myMine = new Mine();
-
-myVillage.mineStone(50); // Affichera: Il n'y a pas assez de villageois
-Console.WriteLine(myVillage.getStone()); // Affichera 10
-Console.WriteLine(myVillage.getWood());// Affichera 10
-myVillage.mineStone(6); // Affichera : Il n'y a pas assez de ressources
-Console.WriteLine(myVillage.getStone()); // Affichera 10
-Console.WriteLine(myVillage.getWood()); // Affichera 10
-myVillage.mineStone(5);
-myVillage.mineStone(5);
-Console.WriteLine(myVillage.getStone()); // Affichera 90
-Console.WriteLine(myVillage.getWood()); // Affichera 0
-myVillage.mineStone(5); // Affichera : Il n'y a pas assez de ressources
+myVillage.cutWood(50); // affichera Il n'y a pas assez de villageois
+Console.WriteLine(myVillage.getStone()); // afficher 10
+Console.WriteLine(myVillage.getWood()); // afficher 10
+myVillage.cutWood(6); // affichera Il n'y a pas assez de ressource
+Console.WriteLine(myVillage.getStone()); // afficher 10
+Console.WriteLine(myVillage.getWood()); // afficher 10
+myVillage.cutWood(5);myVillage.cutWood(5); // affichera Il n'y a pas assez de ressource
+Console.WriteLine(myVillage.getStone()); // afficher 0
+Console.WriteLine(myVillage.getWood()); // afficher 55
+myVillage.cutWood(5); // affichera Il n'y a pas assez de ressource

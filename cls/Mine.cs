@@ -12,7 +12,6 @@ namespace Class
 
         public int mineStone(int nbr_villageois){
             int gain = nbr_villageois * gain_stone;
-            // int result = gain - stone_cost - wood_cost;
 
             return 0;
         }
